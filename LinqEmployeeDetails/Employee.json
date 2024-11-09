@@ -1,0 +1,317 @@
+[
+  {
+    "id": 13,
+    "fName": "Ahmed",
+    "lName": "Elkomy",
+    "age": 25,
+    "email": "ahmed.elkomy.dev@gmail.com",
+    "salary": 100.00,
+    "phone": "01552371964",
+    "country": "Giza",
+    "state": "Single",
+    "gender": "Male",
+    "EmployeeDetails": [
+      {
+        "id": 13,
+        "city": "El Omranya",
+        "experience": 5,
+        "jobTitle": "SoftWare Developer",
+        "Employeeid": 13
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "fName": "Kareem",
+    "lName": "Elkomy",
+    "age": 27,
+    "email": "",
+    "salary": 5.00,
+    "phone": "01062771964",
+    "country": "Menoufia",
+    "state": "Single",
+    "gender": "Male",
+    "EmployeeDetails": [
+      {
+        "id": 14,
+        "city": "Birket Elsabaa",
+        "experience": 6,
+        "jobTitle": "Doctor",
+        "Employeeid": 14
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 15,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 15
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 16,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 16
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 17,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 17
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 18,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 18
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 19,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 19
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 20,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 20
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 21,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 21
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 22,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 22
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 23,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 23
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "fName": "dasssssssss",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 24,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 24
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 25,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 25
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "fName": "string",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 26,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 26
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "fName": "uuuuuuuu",
+    "lName": "string",
+    "age": 0,
+    "email": "string",
+    "salary": 0.00,
+    "phone": "string",
+    "country": "string",
+    "state": "string",
+    "gender": "string",
+    "EmployeeDetails": [
+      {
+        "id": 27,
+        "city": "string",
+        "experience": 0,
+        "jobTitle": "string",
+        "Employeeid": 27
+      }
+    ]
+  }
+]

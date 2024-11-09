@@ -1,6 +1,7 @@
 
 using EmployeeDetailsEntity.Models.emp;
 using LinqEmployeeDetails.Data;
+using LinqEmployeeDetails.Json;
 using Microsoft.EntityFrameworkCore;
 
 namespace LinqEmployeeDetails
@@ -17,6 +18,7 @@ namespace LinqEmployeeDetails
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddScoped<IEmployee, SqlEmployee>();
+            builder.Services.AddScoped<JsonHandler>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -34,9 +36,7 @@ namespace LinqEmployeeDetails
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
-
-
+        
             app.MapControllers();
 
             app.Run();

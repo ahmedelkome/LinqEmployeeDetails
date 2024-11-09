@@ -1,7 +1,7 @@
 ﻿
 using LinqEmployeeDetails.Data;
+using LinqEmployeeDetails.Json;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 
 namespace EmployeeDetailsEntity.Models.emp
 {
@@ -9,9 +9,12 @@ namespace EmployeeDetailsEntity.Models.emp
     {
         private readonly ApplicationDbContext _context;
 
-        public SqlEmployee(ApplicationDbContext context)
+        private readonly JsonHandler _json;
+
+        public SqlEmployee(ApplicationDbContext context, JsonHandler json)
         {
             _context = context;
+            _json = json;
         }
 
         public string DeleteEmployee(int id)
@@ -45,6 +48,17 @@ namespace EmployeeDetailsEntity.Models.emp
             }
         }
 
+        public List<Employee> GetAllEmployee()
+        {
+            var list =  _context.employees.Include(e=>e.EmployeeDetails).ToList();
+
+            var listFromJson = _json.WriteAllEmployeeFromDatabase(list);
+
+            return listFromJson;
+
+
+        }
+
         public Employee GetEmployee(int id)
         {
             if (id > 0)
@@ -71,10 +85,38 @@ namespace EmployeeDetailsEntity.Models.emp
 
         }
 
+
+
+
+
+
+
+
+
+        public List<Employee> GetEmployeeAllFromJson()
+        {
+            return  _json.GetEmployeeList();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public EmployeeDto GetEmployeeDetailsAndEmployeeName(int id)
         {
             if (id > 0)
             {
+
+
                 var result = _context.employeeDetails
                     .Where(d => d.id == id)
                    .Select(d => new EmployeeDto
@@ -91,29 +133,24 @@ namespace EmployeeDetailsEntity.Models.emp
                    }).FirstOrDefault();
 
 
-                /*
-                 var result = _context.employeeDetails
-                    .Where(d => d.id == id)
-                   .Select(d => new EmployeeDto
-                   {
-                       id = d.id,
-                       city = d.city,
-                       experience = d.experience,
-                       jobTitle = d.jobTitle,
-                       Employeename = _context.employees.Where(
-                           e => e.id == d.Employeeid)
-                       .Select(e => e.fName)
-                       .FirstOrDefault()
 
-                   }).FirstOrDefault();
-                 */
+                var resultJoin = _context.employeeDetails.Where(d => d.Employeeid == id)
+                    .Join(_context.employees,d=>d.Employeeid == id,e=>e.id == id,
+                    (d,e) => new EmployeeDto
+                    {
+                        city = d.city,
+                        experience = d.experience,
+                        jobTitle = d.jobTitle,
+                        Employeename = e.fName
+                    }).FirstOrDefault();
+                
 
-                if (result == null)
+                if (resultJoin == null)
                 {
                     return null;
                 }
 
-                return result;
+                return resultJoin;
             }
             else
             {
@@ -135,6 +172,7 @@ namespace EmployeeDetailsEntity.Models.emp
                 }
                 _context.employees.Add(employee);
                 _context.employeeDetails.AddRange(employee.EmployeeDetails);
+                _json.SaveEmployee(employee);
                 _context.SaveChanges();
             }
             else

@@ -31,6 +31,13 @@ namespace EmployeeDetailsEntity.Controllers
             return Ok(result);
         }
 
+        [HttpGet("GetAllEmployee")]
+        public IActionResult GetAllEmployee()
+        {
+            var result = _employee.GetAllEmployee();
+            return Ok(result);
+        }
+
         [HttpGet]
         public IActionResult GetEmployeeDetails(int id)
         {
@@ -53,5 +60,12 @@ namespace EmployeeDetailsEntity.Controllers
         }
 
 
+
+
+        [HttpGet("JsonGetapi")]
+        public List<Employee> GetAllEmployeeFromJson()
+        {
+            return _employee.GetEmployeeAllFromJson();
+        }
     }
 }
